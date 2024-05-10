@@ -59,7 +59,7 @@ function createDivForPopupMenu (quantity, nameClass, repos) {
     
     popupMenu.classList.add('main-nav__popup-menu--visible');
     if (popupMenu.querySelectorAll('*').length > 0) {
-        // popupMenu.innerHTML = "";
+      
         popupMenu.textContent = '';
     }
     for (let i = 0; i < quantity; i++) {
@@ -117,3 +117,21 @@ function createListener(elem) {
         }
     })
 }
+
+let mainNav = document.querySelector('.main-nav');
+
+mainNav.addEventListener('click', function(evt) {
+    
+    if (evt.target.classList.value === "main-nav") {
+        if (popupMenu.classList.contains('main-nav__popup-menu--visible')) {
+            popupMenu.classList.remove('main-nav__popup-menu--visible');
+            inputSearch.value = '';
+    
+        }
+
+
+    }
+ 
+
+
+});
