@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-nav {
+    min-height: 761px;
+    width: 661px;
+    padding: 62px 84px 72px 74px;
+    background-color: #C4C4C4;
+}
+
+.main-nav__input {
+    height: 61px;
+    width: 500px;
+    padding-left: 13px;
+    border: none;
+    outline: none;
+    font-size: 47px;
+}
+
+.main-nav__input::placeholder{
+    font-size: 20px;
+}
+
+.main-nav__res-div {
+    height: 44px;
+    width: 500px;
+    color: #000000;
+    border: 2px solid black;
+    padding-left: 13px;
+    font-size: 30px;
+    background-color: #E3E3E3;
+}
+
+.main-nav__popup-menu{
+    display: none;
+}
+
+.main-nav__popup-menu--visible{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+
+}
+
+.main-nav__res-div:hover{
+    
+    background-color: #65CDF9;
+}
+
+.main-nav__add-menu{
+    margin-top: 45px;
+}
+
+.main-nav__add-menu-elem{
+    height: 101px;
+    width: 503px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav__elem-text{
+    margin: 8px 16px;
+    size: 24px;
+    font-weight: 700;
+}
+.main-nav__batton{
+    width: 39px;
+    height: 42px;
+    margin-right: 34px;
+    background: url('../img/cross.svg') no-repeat;
+    background-size: 32px 39px;
+    border:none;
+
+
+}
+
+.main-nav__add-menu-elem-wpapper{
+    display: flex;
+    background-color: #E27BEB;
+    border: 1px solid black;
+    height: 101px;
+    width: 503px;
+    align-items: center;
+}
